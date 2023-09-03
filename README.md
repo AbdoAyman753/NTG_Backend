@@ -27,13 +27,13 @@ Built Using Spring Boot 2.7.15.
 
 ## APIs Documentation
 
-POST
+### POST
 Save Game
 `http://localhost:8080/api/v1/games`
 ﻿
 Body
 raw (json)
-`
+```
 {
     "title" : "Middle-earth™: Shadow of Mordor",
     "description" : "Fight through Mordor and uncover the truth of the spirit that compels you, discover the origins of the Rings of Power.",
@@ -44,39 +44,39 @@ raw (json)
         { "name" : "RPG" },
         { "name" : "Single-player" }
     ]
-}`
+}
+```
 
-
-POST
+### POST
 Authenticate
 `http://localhost:8080/api/v1/auth/login`
 ﻿
 Body
 raw (json)
-`
+```
 {
     "email" : "abdobebo1998@gmail.com",
     "password" : "123456789"
-}`
+}
+```
 
-
-POST
+### POST
 Register
 `http://localhost:8080/api/v1/auth/register`
 
 Body
 raw (json)
-`
+```
 {
    "firstName" : "Abdo",
    "lastName" : "Ayman",
    "userName" : "DizzySkipper",
    "email" : "abdo_2100@gamil.com",
    "password" : "123456"
-}`
+}
+```
 
-
-GET
+### GET
 Get Games
 `http://localhost:8080/api/v1/games?minPrice=0&maxPrice=10000`
 ﻿
@@ -87,7 +87,7 @@ maxPrice
 10000
 
 
-GET
+### GET
 Get Users
 `http://localhost:8080/api/v1/users/`
 
@@ -97,19 +97,19 @@ Token
 <token>
 
 
-POST
+### POST
 Save Category
 `http://localhost:8080/api/v1/categories/`
 ﻿
 Body
 raw (json)
-`
+```
 {
     "name" : "Open-world"
-}`
+}
+```
 
-
-POST
+### POST
 update user Cart
 `http://localhost:8080/api/v1/users/cart`
 ﻿
@@ -117,29 +117,29 @@ Authorization
 Bearer Token
 Body
 raw (json)
-`
+```
 {
     "title" : "Fortnite",
     "description" : "open World Free to play",
     "price" : 20.99,
     "coverImage" : "assets/fortnite.jpg"
-}`
+}
+```
 
-
-POST
+### POST
 Add Category to game
 `http://localhost:8080/api/v1/categories/addtogame`
 
 Body
 raw (json)
-`
+```
 {
     "gameTitle" : "Fortnite",
     "categoryName" : "Open-world"
-}`
+}
+```
 
-
-GET
+### GET
 Get Categories
 `http://localhost:8080/api/v1/categories`
 
